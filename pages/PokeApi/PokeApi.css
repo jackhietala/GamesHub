@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+
+  .filter{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    gap:100px;
+  }
+
+  .pokeapi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0px 40px 0px;
+    gap: 10px;
+  }
+
+ .section{
+ align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    gap: 10px;
+ 
+  } 
+  
+
+.flip-card-front{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr;
+    border: 10px solid rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    gap: 15px;
+    align-self: center;
+    border-radius: 100%;
+    background-color: rgba(209, 207, 207, 0.76);
+    margin:10px auto auto auto;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 40px 4px;
+    
+}
+
+
+.flip-card-back{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+       border: 10px solid rgb(0, 0, 0);
+       align-items: center;
+       text-align: center;
+       width: 250px;
+       height: 250px;
+       gap: 15px;
+       align-self: center;
+       border-radius: 100%;
+       background-color: rgba(209, 207, 207, 0.322);
+       margin:10px auto auto auto;
+       justify-content: center;
+       font-weight: 700;
+       text-transform: capitalize;
+       color: white;
+       transform: rotateY(180deg);
+       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 40px 4px;
+          }
+   
+
+h2{
+    font-weight: 700;
+    font-size: large;
+}
+
+h3{
+    font-weight: 300;
+    size: 0.8rem;
+}
+
+.flip-card-front img{
+ 
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    margin-bottom: 10px;
+  
+}
+
+.flip-card-back img{
+ 
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    margin-bottom: 10px;
+ 
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px; 
+    gap: 10px;/* Remove this if you don't want the 3D effect */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    gap: 10px;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    gap: 10px;
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    gap: 10px;
+  }
+  
+.pokeCard {
+  width : 300px;
+}
+  
+#pokeContainer{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+
+
+button {
+  --text-base: 277deg, 55%, 40%;
+  --text-hover: 307deg, 72%, 86%;
+  --shadow-start: 52deg, 100%, 72%;
+  --shadow-end: 282deg, 90%, 50%;
+  --shadow-inner: 277deg, 90%, 62%;
+  all: unset;
+  color: hsla(var(--text-base), 1);
+  font: 700 1.125rem/1.2 Raleway, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.85em;
+  max-width: 100%;
+  width: 8em;
+  height: auto;
+  background: inherit;
+  background-clip: padding-box;
+  border: 5px solid hsla(var(--text-base), 1);
+  border-radius: 2em;
+  cursor: pointer;
+  position: relative;
+  transition: 0.25s ease-out;
+  gap: 5px;
+  margin: 5px;
+}
+button::before, button::after {
+  content: "";
+  border-radius: inherit;
+  transition: inherit;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+button::before {
+  inset: -0.2em;
+  z-index: -1;
+  background: linear-gradient(hsla(var(--shadow-start), 1), hsla(var(--shadow-end), 1));
+  filter: blur(1.2em) saturate(1.2);
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+  opacity: 0;
+}
+button::after {
+  box-shadow: inset 0 0 0 1px #fff, 0 0 0 4px rgba(255, 255, 255, 0.7), 1px 1px 0 4px #fff;
+  mix-blend-mode: overlay;
+  opacity: 0;
+}
+button:hover, button:focus {
+  color: hsla(var(--text-hover), 1);
+  border-color: transparent;
+  box-shadow: inset 0 1.4em 0 hsla(var(--shadow-inner), 0.1), inset 0 0 1.4em hsla(var(--shadow-inner), 0.32), 0 1px 1px hsla(var(--shadow-inner), 0.32);
+}
+button:hover::before, button:hover::after, button:focus::before, button:focus::after {
+  transform: none;
+  opacity: 1;
+}

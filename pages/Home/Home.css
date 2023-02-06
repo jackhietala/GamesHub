@@ -1,0 +1,64 @@
+.home {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+div > #pptlink2{
+  background-image: url(https://static.wikia.nocookie.net/bigbangtheory/images/7/7d/RPSLS.png);
+  height: 200px;
+  width: 200px;
+  object-fit: FILL;
+  text-decoration: none;
+  font-weight: 700;
+  
+
+}
+
+div > #pokeapilink2{
+  background-image: url(https://miro.medium.com/max/300/0*NsHVyfpJ2k7ixTAd);
+  height: 200px;
+  width: 200px;
+  object-fit: FILL;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 15%;
+  
+
+}
+
+
+.home > div{
+  display: grid;
+  height: 250px;
+  width: 250px;
+  border: 3px solid white;
+  border-radius: 15%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr ;
+  font-size: larger;
+
+}
+
+.home > h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding-left: 20px;
+opacity: 80%;
+
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
