@@ -21,9 +21,9 @@ export const initContent = (route) => {
     case "PokeApi":
         PokeApiTemplate();
         break;
-     case "Quiz":
-      QuizTemplate();
-      break;
+   //  case "Quiz":
+   //   QuizTemplate();
+  //    break;
       case "PPT":
         PPTTemplate();
         break;

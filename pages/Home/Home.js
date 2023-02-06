@@ -6,10 +6,10 @@ const template = () => `
     <h2>Home</h2>
     <div class="box">   <a href="#" id="pokeapilink2">PokeApi</a></div>
     <div  class="box"><a href="#" id="pptlink2">Piedra-Papel-Tijera Lagarto Spock!</a></div>
-    <div  class="box"><a href="#" id="quizlink2">Quiz!</a></div>
-
+   
 </section>
 `;
+ //<div  class="box"><a href="#" id="quizlink2">Quiz!</a></div>
 
 export const printTemplate = () => {
   document.querySelector("#app").innerHTML = template();

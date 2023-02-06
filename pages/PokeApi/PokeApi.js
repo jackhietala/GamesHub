@@ -76,14 +76,12 @@ const loadPokemons = async (pk) => {
             tmpPkm.types.push(type.type.name);
         }
         savePkm[pkdata.id] = tmpPkm;
-            // printPokemon(tmpPkm);
-            // console.log(allPokemon);
+
         
     }
     return savePkm;
 }
 
-const searchBtn = document.querySelector("#searchBtn");
 
 
 const init = () => {
@@ -94,7 +92,6 @@ const getPokemon = async () => {
   const res = await fetch(BASE_URL);
   const data = await res.json();
   const pokemons = data;
-   mapPokemons(pokemons);
 };
 
 
@@ -144,17 +141,9 @@ const printPokemons = (pokemons) => {
 };
 
 
-//Le pasamos una lista de characters (seran los characters globales)
 const filterPokemons = () => {
-  //Creamos un nuevo array filtrando los personajes
   console.log(allPokemon);
   const searchInput = document.querySelector("#searchInput");
-//   let filteredPokemons = allPokemon.filter((pokemon) =>{
-//     //El nombre del personaje en minuscula tiene que incluir el valor de input en minuscula
-//     console.log(pokemon.name);
-//     console.log(searchInput.value.toLowerCase());
-//     pokemon.name.toLowerCas().includes(searchInput.value.toLowerCase())
-//   });;
 
   const filteredPokemons = allPokemon.filter((pk) => pk.name.toLowerCase().includes(searchInput.value.toLowerCase()));
   console.log(filteredPokemons);
