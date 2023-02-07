@@ -15,7 +15,7 @@ const template = () => `
 <button class="player glowing-btn" role="button" data-value="4"><span class='glowing-txt'><span class='faulty-letter'>SPO</span>CK</span></button></DIV>
 
 
-<div ><img class="rules" src="https://intervia.com/img/piedra-papel-tijera-lagarto-spock.png" alt="Piedra Papel Tijera Lagarto Spock"></div>
+<div class="rules"><img  src="https://intervia.com/img/piedra-papel-tijera-lagarto-spock.png" alt="Piedra Papel Tijera Lagarto Spock"></div>
 
 
 </section>

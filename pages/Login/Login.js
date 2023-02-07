@@ -1,5 +1,6 @@
 import "./Login.css";
 
+
 const template = () => `
 <section class="login">
 <h2>Login</h2>
@@ -7,6 +8,9 @@ const template = () => `
 <button id="loginBtn">Login</button>
 </section>
 `;
+
+// const element = document.getElementById('navlist');
+// element.remove();
 
 const addListeners = () => {
   const loginInput = document.querySelector("#loginInput");

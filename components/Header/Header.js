@@ -10,16 +10,18 @@ const template = () => {
 return `
 <nav>
     <ul>
-        <li>
-            <a href="#" id="homelink">Home</a>
-        </li>
+ <li>
+    <a href="#" id="homelink">Home</a>
+</li>
+<div id="navlist">
 
-        <li>
-        <a href="#" id="pokeapilink">PokeApi</a>
-    </li>
-        
-         <li><a href="#" id="pptlink">Piedra-Papel-Tijera-Lagarto-Spock</a></li>
-           
+
+<li>
+<a href="#" id="pokeapilink">PokeApi</a>
+ </li>
+  <li><a href="#" id="pptlink">Piedra-Papel-Tijera-Lagarto-Spock</a></li>
+   </div>
+
           <li>
         ${loginButton}
                   </li> 
@@ -28,6 +30,9 @@ return `
 </nav>
 `;
 }
+
+
+
 
 const addListeners = () => {
   document

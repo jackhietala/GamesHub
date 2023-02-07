@@ -16,8 +16,6 @@ header > nav > ul {
   margin: 10px 20px;
   width: 90vw;
   
-  
-  
 }
 
 header a {
@@ -31,3 +29,10 @@ header a:hover {
   text-decoration: underline;
 }
 
+#navlist{
+  gap: 25px;
+justify-content: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}

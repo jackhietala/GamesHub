@@ -150,5 +150,4 @@ const filterPokemons = () => {
   printPokemons(filteredPokemons);
 };
 
-
 init();

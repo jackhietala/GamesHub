@@ -18,9 +18,7 @@ export const printTemplate = () => {
 
 const addListeners = () => {
 
-  document
-    .querySelector("#quizlink2")
-    .addEventListener("click", () => initContent("Quiz"));
+
 
   document
     .querySelector("#pokeapilink2")
